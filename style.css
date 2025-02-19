@@ -91,7 +91,7 @@ body.hide-header .header{
     position: sticky;
     display: flex;
     padding: 0rem 2rem;
-    margin-top: 20px;
+    margin-top: 50px;
     z-index: 100;
 }
 
