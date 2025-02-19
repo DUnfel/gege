@@ -62,7 +62,6 @@ body{
 .chats{
     margin-left: -140px;
     max-height: 500px; /* Set the desired height */
-    overflow-y: auto;
     scroll-behavior: smooth;  /* Enable vertical scrolling */
 }
 .prompt__form{
@@ -89,12 +88,11 @@ body.hide-header .header{
 }
 
 .navbar{
-    position: fixed;
+    position: sticky;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0rem 2rem;
-    margin-top: -30px;
+    margin-top: 20px;
+    z-index: 100;
 }
 
 .navbar__logo{
