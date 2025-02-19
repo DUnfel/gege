@@ -1,8 +1,3 @@
-const autoScroll = () => {
-    const chatContainer = document.querySelector('.chats');
-    // Scroll to the bottom of the chat container
-    chatContainer.scrollTop = chatContainer.scrollHeight;
-};
 const messageForm = document.querySelector(".prompt__form");
 const chatHistoryContainer = document.querySelector(".chats");
 const suggestionItems = document.querySelectorAll(".suggests__item");
@@ -276,14 +271,3 @@ messageForm.addEventListener('submit', (e) => {
 
 // Load saved chat history on page load
 loadSavedChatHistory();
-const myDiv = document.getElementById('message--ingoing');
-
-function autoscroll() {
-  if (myDiv.scrollTop + myDiv.clientHeight >= myDiv.scrollHeight) {
-    clearInterval(interval); // Stop scrolling when at the bottom
-    return;
-  }
-  myDiv.scrollTop += 10;
-}
-
-let interval = setInterval(autoscroll, 100); // 10 pixels every 100ms
